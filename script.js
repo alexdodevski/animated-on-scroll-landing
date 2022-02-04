@@ -18,7 +18,9 @@ class App {
     }
 
     animatedItems() {
-
+        this.items.forEach(element => {
+            element.elem.classList.add('_active')
+        });
 
     }
 }

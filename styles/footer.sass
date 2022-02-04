@@ -1,0 +1,55 @@
+// FOOTER
+
+.footer
+    height: 600px
+    background: #C58DAE
+    display: flex
+.footer_content
+    width: 1280px
+    margin: 0 auto
+    color: #fff
+    font-size: 20px
+    display: flex
+    flex-direction: column
+    padding-top: 50px
+    height: 100%
+.footer_list
+    list-style-type: none
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    height: 100%
+    & li
+        line-height: 25px
+        transform: translate(-100px, 0)
+        transition: all 0.9s ease 0s
+        opacity: 0
+        padding-left: 40px
+        margin-bottom: 20px
+        position: relative
+    & li:last-child
+        margin: 0
+    & li ::before
+        content: ""
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        background: #333
+        position: absolute
+        left: 10px
+        top: 8px
+    &._active li
+        transform: translate(0, 0)
+        opacity: 1
+    &._active li:nth-child(1)
+        transition: all 0.9s ease 0s
+    &._active li:nth-child(2)
+        transition: all 0.9s ease 0.2s
+    &._active li:nth-child(3)
+        transition: all 0.9s ease 0.3s
+    &._active li:nth-child(4)
+        transition: all 0.9s ease 0.4s
+    &._active li:nth-child(5)
+        transition: all 0.9s ease 0.5s
+    &._active li:nth-child(6)
+        transition: all 0.9s ease 0.6s

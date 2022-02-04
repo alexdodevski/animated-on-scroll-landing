@@ -1,31 +1,31 @@
-body
-    margin: 0
-    font-family: 'Open sans', sans-serif
+// HEADER
 
 #header
-    height: 800px
+    height: 100vh
     min-width: 100%
     position: relative
-
-.container
-    width: 1280px
-    margin: 0 auto
-    height: 100%
+    display: flex
+    flex-direction: column
 
 .header_content
     height: 100%
     display: flex
     flex-direction: column
+    width: 1280px
+    margin: 0 auto
     justify-content: center
+    align-items: flex-start
+    margin-top: 100px
 
 .header_title
-    margin-top: 120px
     margin-bottom: 0
     font-size: 35px
     color: white
+    flex: 0 0 auto
     transition: all 0.7s ease 0.3s
     transform: translate(0, 120px)
     opacity: 0
+
 .header_title._active
     transform: translate(0,0)
     transition: all 0.7s ease 0s
@@ -37,6 +37,7 @@ body
     transition: all 0.7s ease 0s
     transform: translate(0, 120px)
     opacity: 0
+
 .header_text._active
     transform: translate(0,0)
     transition: all 0.7s ease 0.3s
@@ -47,7 +48,7 @@ body
     height: 100%
     top: 0
     left: 0
-    opacity: 0.6
+    opacity: 0.8
     width: 100%
     z-index: -1
 .header_image img
@@ -57,6 +58,3 @@ body
     top: 0
     left: 0
     object-fit: cover
-
-.any_section
-    height: 1000px
