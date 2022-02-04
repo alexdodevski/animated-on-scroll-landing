@@ -1,0 +1,20 @@
+$white: #fff
+$container_width: 1280px
+$main_color: #333
+
+%flex-column
+    display: flex
+    flex-direction: column
+
+=transform($transform)
+    transform: $transform
+
+=transition($transition, $opacity)
+    transition: $transition
+    opacity: $opacity
+
+=scale($size)
+    +transform(scale($size))
+
+=translate($Y, $X)
+    +transform(translate($Y,$X))
