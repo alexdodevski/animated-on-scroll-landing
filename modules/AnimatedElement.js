@@ -4,9 +4,4 @@ export default class AnimatedElement {
         this.elemHeight = elem.offsetHeight
         this.animationStart = 4
     }
-
-    offset(el) {
-        let coords = el.getBoundingClientRect()
-        return { top: coords.top + window.scrollY, left: coords.left + window.scrollX }
-    }
 }
